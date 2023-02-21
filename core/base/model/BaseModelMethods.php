@@ -238,10 +238,6 @@ abstract class BaseModelMethods {
 
     protected function createInsert($fields, $files, $except) {
 
-        if(!$fields) {
-            $fields = $_POST;
-        }
-
         $insertArr = [];
 
         if($fields) {
@@ -280,11 +276,9 @@ abstract class BaseModelMethods {
             }
         }
 
-        if($insertArr) {
-            foreach($insertArr as $key => $str) {
-                $insertArr[$key] = rtrim($str, ',');
-            }    
-        }
+        foreach($insertArr as $key => $str) {
+            $insertArr[$key] = rtrim($str, ',');
+        }   
 
         return $insertArr;
 
