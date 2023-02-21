@@ -1,0 +1,13 @@
+Fault: 08-02-2023 19:26:23 - Не корректная директория сайта
+fileD:\OpenServer\domains\shop.my\core\base\controller\RouteController.php
+In line 102
+\r\nFault: 08-02-2023 19:26:28 - Не корректная директория сайта
+fileD:\OpenServer\domains\shop.my\core\base\controller\RouteController.php
+In line 102
+\r\nFault: 08-02-2023 19:28:11 - Неверное имя файла для подключения - core/base/controller/NClass
+fileD:\OpenServer\domains\shop.my\core\base\settings\internal_settings.php
+In line 33
+\r\nFault: 09-02-2023 16:43:36 - Неверное имя файла для подключения - core/plugins/shop/IndexController
+fileD:\OpenServer\domains\shop.my\core\base\settings\internal_settings.php
+In line 33
+\r\n

@@ -1,0 +1,34 @@
+Fault: 09-02-2023 16:49:04 - Ошибка подключения к базе данны: 1049 Unknown database 'shop1'
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 19
+\r\nFault: 09-02-2023 17:39:10 - Ошибка в SQL запросе:SELECT * FROM articles1 - 1146 Table 'shop.articles1' doesn't exist
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 30
+\r\nFault: 21-02-2023 0:18:53 - Ошибка в SQL запросе:SELECT articles.id,articles.name FROM articles  WHERE articles.name IN ('masha','olya','sveta') OR articles.surname LIKE 'mashaaaaaa%' AND articles.fio<>'andreevna' AND articles.color NOT IN ('1','2','3')  ORDER BY articles.name ASC,articles.surname ASC 5 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 1
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 30
+\r\nFault: 21-02-2023 0:20:40 - Ошибка в SQL запросе:SELECT articles.id,articles.name FROM articles  WHERE articles.name IN ('masha','olya','sveta') OR articles.surname LIKE 'mashaaaaaa%' AND articles.fio<>'andreevna' AND articles.color NOT IN ('1','2','3')  ORDER BY articles.name ASC,articles.surname ASC LIMIT 5 - 1054 Unknown column 'articles.surname' in 'where clause'
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 30
+\r\nFault: 21-02-2023 0:27:14 - Ошибка в SQL запросе:SELECT articles.id,articles.name FROM articles  WHERE articles.name IN ('masha','olya','sveta') OR articles.surname NOT IN (SELECT name FROM students WHERE id = 1)  ORDER BY articles.name ASC,articles.surname ASC LIMIT 5 - 1146 Table 'shop.students' doesn't exist
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 30
+\r\nFault: 21-02-2023 0:28:14 - Ошибка в SQL запросе:SELECT articles.id,articles.name FROM articles  WHERE articles.name IN ('masha','olya','sveta') OR articles.surname<>(SELECT name FROM students WHERE id = 1)  ORDER BY articles.name ASC,articles.surname ASC LIMIT 5 - 1146 Table 'shop.students' doesn't exist
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 30
+\r\nFault: 21-02-2023 0:28:16 - Ошибка в SQL запросе:SELECT articles.id,articles.name FROM articles  WHERE articles.name IN ('masha','olya','sveta') OR articles.surname<>(SELECT name FROM students WHERE id = 1)  ORDER BY articles.name ASC,articles.surname ASC LIMIT 5 - 1146 Table 'shop.students' doesn't exist
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 30
+\r\nFault: 21-02-2023 14:45:07 - Ошибка в SQL запросе:SELECT articles.id,articles.name,join_table1.id as j_id,join_table1.name as j_name,join_table2.id as j2_id,join_table2.name as j2_name FROM articles LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id LEFT JOIN join_table2 ON teachers.id=join_table2.parent_id WHERE articles.name IN ('O\'Raily') AND join_table1.name = 'sasha' AND join_table2.name <> 'sasha'  ORDER BY articles.name ASC,articles.surname ASC LIMIT 5 - 1146 Table 'shop.join_table1' doesn't exist
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 30
+\r\nFault: 21-02-2023 20:34:53 - Ошибка в SQL запросе:INSERT INTO articles (name,content,gallery_img,img,) VALUES ('Olga','hello','[\"red\'\'.jpg\",\"blue.jpg\",\"black\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Olga','hello','[\"red\'\'.jpg\",\"blue.jpg\",\"black\"]','main_img.jp' at line 1
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 30
+\r\nFault: 21-02-2023 20:39:44 - Ошибка в SQL запросе:INSERT INTO articles (name,content,gallery_img,img) VALUES ('Olga','hello','[\"red\'\'.jpg\",\"blue.jpg\",\"black\"]','main_img.jpg') - 1364 Field 'price' doesn't have a default value
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 30
+\r\nFault: 21-02-2023 20:43:32 - Ошибка в SQL запросе:INSERT INTO articles (content,price,gallery_img,img) VALUES ('hello','1.5','[\"red\'\'.jpg\",\"blue.jpg\",\"black\"]','main_img.jpg') - 1364 Field 'name' doesn't have a default value
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 30
+\r\n
