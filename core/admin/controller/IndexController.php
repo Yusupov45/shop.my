@@ -12,13 +12,9 @@ class IndexController extends BaseController {
 
         $table = 'articles';
 
-        $files['gallery_img'] = [''];
-        $files['img'] = "";
-
-        $_POST['id'] = 3;
-        $_POST['name'] = 'Oksana';
-
-        $res = $db->edit($table);
+        $res = $db->delete($table, [
+            'where' => ['id' => 2]
+        ]);
 
 
         exit('admin');
