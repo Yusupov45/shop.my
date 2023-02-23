@@ -12,14 +12,14 @@ class IndexController extends BaseController {
 
         $table = 'articles';
 
-        $files['gallery_img'] = ["red''.jpg", 'blue.jpg', 'black'];
-        $files['img'] = "main_img.jpg";
+        $files['gallery_img'] = [''];
+        $files['img'] = "";
 
-        $res = $db->add($table, [
-            'fields' => ['name' => 'Olga', 'content' => 'hello', 'price' => 1.5],
-            'except' => ['name'],
-            'files' => $files
-        ]);
+        $_POST['id'] = 3;
+        $_POST['name'] = 'Oksana';
+
+        $res = $db->edit($table);
+
 
         exit('admin');
     }

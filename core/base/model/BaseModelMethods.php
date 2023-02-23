@@ -4,6 +4,8 @@ namespace core\base\model;
 
 abstract class BaseModelMethods {
 
+    protected $sqlFunc = ['NOW()'];
+
     protected function createFields($set, $table = false) {
 
         $set['fields'] = (is_array($set['fields']) && !empty($set['fields'])) ? $set['fields']  : ['*'];
@@ -242,7 +244,6 @@ abstract class BaseModelMethods {
 
         if($fields) {
 
-            $sqlFunc = ['NOW()'];
 
             foreach($fields as $row => $value) {
 
@@ -252,7 +253,7 @@ abstract class BaseModelMethods {
 
                 $insertArr['fields'] .= $row . ',';
 
-                if(in_array($value, $sqlFunc)) {
+                if(in_array($value, $this->sqlFunc)) {
                     $insertArr['values'] .= $value . ','; 
                 }
                 else {
@@ -282,5 +283,50 @@ abstract class BaseModelMethods {
 
         return $insertArr;
 
+    }
+
+
+
+    protected function createUpdate($fields, $files, $except) {
+
+        $update = '';
+
+        if($fields) {
+
+            foreach($fields as $row => $value) {
+
+                if ($except && in_array($row, $except)) {
+                    continue;
+                }
+
+                $update .= $row . '=' ;
+
+                if (in_array($value, $this->sqlFunc)) {
+                    $update .= $value . ',';
+                }
+                else {
+                    $update .= "'" . addslashes($value) . "',";
+                }
+            }
+        }
+
+
+        if($files) {
+
+            foreach($files as $row => $file) {
+
+                $update .= $row . '=';
+                
+                if(is_array($file)) {
+                    $update .= "'" . addslashes(json_encode($file)) . "'" . ',';
+                }
+                else {
+                    $update .= "'" . addslashes($file) . "'" . ',';
+                }
+            }
+        }
+
+
+        return rtrim($update, ',');
     }
 }
