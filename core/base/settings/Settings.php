@@ -39,6 +39,8 @@ class Settings{
         ]
     ];
 
+    private $defaultTable = 'articles';
+
     private $templateArr = [
         'text' => [
             'name',
