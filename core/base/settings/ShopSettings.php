@@ -29,6 +29,8 @@ class ShopSettings {
         ]
     ];
 
+
+
     public static function get($property)
     {
         return self::getInstance()->$property;

@@ -15,13 +15,15 @@ class RouteController extends BaseController{  // разбирает адрес�
     {
         $addressStr = $_SERVER['REQUEST_URI'];
 
-        if(strrpos($addressStr, '/') === strlen($addressStr) - 1 && strrpos($addressStr, '/') !== 0) {
-            $this->redirect(rtrim($addressStr, '/'), 301);
-        } 
 
         $path = substr($_SERVER['PHP_SELF'], 0, strpos($_SERVER['PHP_SELF'], 'index.php'));
 
         if ($path === PATH) {
+
+            if(strrpos($addressStr, '/') === strlen($addressStr) - 1 && strrpos($addressStr, '/') !== strlen(PATH) - 1) {
+                $this->redirect(rtrim($addressStr, '/'), 301);
+            } 
+
             $this->routes = Settings::get('routes');
 
             if (!$this->routes) {

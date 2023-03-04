@@ -53,6 +53,7 @@ class Settings{
         ],
     ];
 
+    private $expansion = 'core/admin/expansion/';
 
     public static function get($property)
     {
