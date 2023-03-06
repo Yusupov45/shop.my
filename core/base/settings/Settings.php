@@ -39,7 +39,13 @@ class Settings{
         ]
     ];
 
+    private $expansion = 'core/admin/expansion/';
+
     private $defaultTable = 'articles';
+
+    private $projectTables = [
+        'articles' => ['name' => 'Записи', 'img' => 'pages.png']
+    ];
 
     private $templateArr = [
         'text' => [
@@ -53,7 +59,6 @@ class Settings{
         ],
     ];
 
-    private $expansion = 'core/admin/expansion/';
 
     public static function get($property)
     {

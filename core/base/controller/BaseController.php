@@ -9,6 +9,9 @@ abstract class BaseController{ //подключает методы для выт
 
     use \core\base\controller\BaseMethods;
 
+    protected $header;
+    protected $content;
+    protected $footer;
     protected $page;
     protected $errors;
 
@@ -17,6 +20,7 @@ abstract class BaseController{ //подключает методы для выт
     protected $outputMethod;
     protected $parameters;
 
+    protected $template;
     protected $styles;
     protected $scripts;
 
@@ -67,6 +71,7 @@ abstract class BaseController{ //подключает методы для выт
     }
 
     protected function render($path = '', $parameters = []) {
+
         extract($parameters);
 
         if(!$path) {

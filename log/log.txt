@@ -10,4 +10,16 @@ In line 33
 \r\nFault: 09-02-2023 16:43:36 - Неверное имя файла для подключения - core/plugins/shop/IndexController
 fileD:\OpenServer\domains\shop.my\core\base\settings\internal_settings.php
 In line 33
+\r\nFault: 05-03-2023 1:49:00 - Неверное имя файла для подключения - core/admin/controller/AddController
+fileD:\OpenServer\domains\shop.my\core\base\settings\internal_settings.php
+In line 34
+\r\nFault: 05-03-2023 1:49:04 - Неверное имя файла для подключения - core/admin/controller/EditController
+fileD:\OpenServer\domains\shop.my\core\base\settings\internal_settings.php
+In line 34
+\r\nFault: 06-03-2023 1:06:14 - Неверное имя файла для подключения - core/admin/controller/AdminController
+fileD:\OpenServer\domains\shop.my\core\base\settings\internal_settings.php
+In line 34
+\r\nFault: 06-03-2023 1:06:32 - Неверное имя файла для подключения - core/admin/controller/AdminController
+fileD:\OpenServer\domains\shop.my\core\base\settings\internal_settings.php
+In line 34
 \r\n
