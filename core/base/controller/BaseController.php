@@ -24,6 +24,8 @@ abstract class BaseController{ //подключает методы для выт
     protected $styles;
     protected $scripts;
 
+    protected $userId;
+
     public function route() {
         $controller = str_replace('/', '\\', $this->controller);
 

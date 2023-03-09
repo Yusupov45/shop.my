@@ -31,4 +31,9 @@ In line 30
 \r\nFault: 21-02-2023 20:43:32 - Ошибка в SQL запросе:INSERT INTO articles (content,price,gallery_img,img) VALUES ('hello','1.5','[\"red\'\'.jpg\",\"blue.jpg\",\"black\"]','main_img.jpg') - 1364 Field 'name' doesn't have a default value
 fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
 In line 30
+\r\nFault: 07-03-2023 21:49:41 - Ошибка в SQL запросе:SELECT * FROM information_schema.KEY_COLUMN_USAGE 
+                WHERE TABLE_SCHEMA = 'shop' AND TABLE_NAME = 'articles' AND 
+                CONSTRAIT_NAME <> 'PRIMERY' AND REFERENCED_TABLE_NAME is NOT NULL - 1054 Unknown column 'CONSTRAIT_NAME' in 'where clause'
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 27
 \r\n

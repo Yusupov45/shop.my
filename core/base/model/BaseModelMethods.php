@@ -10,7 +10,7 @@ abstract class BaseModelMethods {
 
         $set['fields'] = (is_array($set['fields']) && !empty($set['fields'])) ? $set['fields']  : ['*'];
 
-        $table = $table ? $table . '.' : '';
+        $table = ($table && !$set['no_concat']) ? $table . '.' : '';
 
         $fields = '';
         
@@ -25,7 +25,7 @@ abstract class BaseModelMethods {
 
     protected function createOrder($set, $table = false) {
         
-        $table = $table ? $table . '.' : '';
+        $table = ($table && !$set['no_concat']) ? $table . '.' : '';
 
         $orderBy = '';
 
@@ -63,9 +63,13 @@ abstract class BaseModelMethods {
 
     protected function createWhere($set, $table = false, $instruction = 'WHERE') {
 
-        $table = $table ? $table . '.' : '';
+        $table = ($table && !$set['no_concat']) ? $table . '.' : '';
 
         $where = '';
+
+        if(is_string($set['where'])) {
+            return $instruction . ' ' . trim($set['where']);
+        }
 
         if(is_array($set['where']) && !empty($set['where'])) {
 
