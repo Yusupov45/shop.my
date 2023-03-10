@@ -36,4 +36,40 @@ In line 30
                 CONSTRAIT_NAME <> 'PRIMERY' AND REFERENCED_TABLE_NAME is NOT NULL - 1054 Unknown column 'CONSTRAIT_NAME' in 'where clause'
 fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
 In line 27
+\r\nFault: 11-03-2023 1:59:17 - Ошибка в SQL запросе:INSERT INTO articles (name,img) VALUES ('Lena','1.img'),('Lena2','2.img') - 1364 Field 'content' doesn't have a default value
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 27
+\r\nFault: 11-03-2023 1:59:25 - Ошибка в SQL запросе:SHOW COLUMNS FROM add - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'add' at line 1
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 27
+\r\nFault: 11-03-2023 1:59:36 - Ошибка в SQL запросе:INSERT INTO articles (name,img) VALUES ('Lena','1.img'),('Lena2','2.img') - 1364 Field 'content' doesn't have a default value
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 27
+\r\nFault: 11-03-2023 1:59:51 - Ошибка в SQL запросе:INSERT INTO articles (name,img) VALUES ('Lena','1.img'),('Lena2','2.img') - 1364 Field 'content' doesn't have a default value
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 27
+\r\nFault: 11-03-2023 1:59:57 - Ошибка в SQL запросе:SHOW COLUMNS FROM add - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'add' at line 1
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 27
+\r\nFault: 11-03-2023 2:00:04 - Ошибка в SQL запросе:INSERT INTO articles (name,img) VALUES ('Lena','1.img'),('Lena2','2.img') - 1364 Field 'content' doesn't have a default value
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 27
+\r\nFault: 11-03-2023 2:00:08 - Ошибка в SQL запросе:INSERT INTO articles (name,img) VALUES ('Lena','1.img'),('Lena2','2.img') - 1364 Field 'content' doesn't have a default value
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 27
+\r\nFault: 11-03-2023 2:00:41 - Ошибка в SQL запросе:INSERT INTO articles (name,img,content) VALUES ('Lena','1.img','123'),('Lena2','2.img','123') - 1364 Field 'price' doesn't have a default value
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 27
+\r\nFault: 11-03-2023 2:04:40 - Ошибка в SQL запросе:INSERT INTO articles (name,img,content,price,menu_postion) VALUES ('Lena','1.img','123','123','1'),('Lena2','2.img','123','123',NULL) - 1054 Unknown column 'menu_postion' in 'field list'
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 27
+\r\nFault: 11-03-2023 2:05:04 - Ошибка в SQL запросе:INSERT INTO articles (name,img,content,price,menu_position) VALUES ('Lena','1.img','123','123','1'),('Lena2','2.img','123','123',NULL) - 1054 Unknown column 'menu_position' in 'field list'
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 27
+\r\nFault: 11-03-2023 2:06:43 - Ошибка в SQL запросе:INSERT INTO articles (name,content,price,parent_id) VALUES ('Lena3','123','123','1','1.jpg','[\"5.jpg\",\"6.jpg\"]') - 1136 Column count doesn't match value count at row 1
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 27
+\r\nFault: 11-03-2023 2:08:35 - Ошибка в SQL запросе:INSERT INTO articles (name,content,price,parent_id,gallery_img) VALUES ('Lena3','123','123','1','1.jpg','[\"5.jpg\",\"6.jpg\"]') - 1136 Column count doesn't match value count at row 1
+fileD:\OpenServer\domains\shop.my\core\base\model\BaseModel.php
+In line 27
 \r\n

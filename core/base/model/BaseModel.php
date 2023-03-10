@@ -152,13 +152,9 @@ abstract class BaseModel extends BaseModelMethods{
         
         $insertArr = $this->createInsert($set['fields'],  $set['files'], $set['except']);
 
-        if($insertArr) {
-            $query = "INSERT INTO $table ({$insertArr['fields']}) VALUES ({$insertArr['values']})";
+        $query = "INSERT INTO $table {$insertArr['fields']} VALUES {$insertArr['values']}";
 
-            return $this->query($query, 'c', $set['return_id']);
-        }
-
-        return false;
+        return $this->query($query, 'c', $set['return_id']);
     }
 
     final public function edit($table, $set = []) {

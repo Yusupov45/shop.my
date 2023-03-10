@@ -24,6 +24,7 @@ class AddController extends BaseAdmin {
 
     }
 
+
     protected function createForeignProperty($arr, $rootItems) {
 
         if(in_array($this->table, $rootItems['tables'])) {
