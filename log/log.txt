@@ -34,4 +34,7 @@ In line 99
 \r\nFault: 08-03-2023 23:47:03 - Отсутствует шаблон - core/admin/view/add
 fileD:\OpenServer\domains\shop.my\core\base\controller\BaseController.php
 In line 99
+\r\nFault: 13-03-2023 1:42:52 - Не найден шаблонD:/OpenServer/domains/shop.mytext.php
+fileD:\OpenServer\domains\shop.my\core\admin\view\add.php
+In line 45
 \r\n

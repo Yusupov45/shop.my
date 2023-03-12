@@ -43,6 +43,8 @@ class Settings{
 
     private $defaultTable = 'articles';
 
+    private $formTemplates = PATH . 'core/admin/view/include/form_templates/';
+
     private $projectTables = [
         'articles' => ['name' => 'Записи', 'img' => 'pages.png']
     ];
@@ -50,13 +52,15 @@ class Settings{
     private $templateArr = [
         'text' => [
             'name',
-            'phone',
-            'adress'
+            'price',
         ],
         'textarea' => [
             'content',
-            'keywords'
         ],
+        'radio' => [
+            'parent_id'
+        ],
+        'img' => ['img']
     ];
 
     private $translate = [
@@ -74,7 +78,7 @@ class Settings{
 
     private $blockNeedle = [
         'vg-rows' => [],
-        'vg-img' => ['id'],
+        'vg-img' => ['img'],
         'vg-content' => ['content']
     ];
 
