@@ -1,4 +1,4 @@
-php_flag magic_qoutes_gps Off
+php_flag magic_quotes_gps Off
 
 AddDefaultCharset utf-8
 
